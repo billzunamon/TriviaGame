@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Trivia Game</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body >
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-12"></div>
+  </div>
+
+   <div class="row">
+      <div class="col-12">
+       <div class="panel panel-default">
+          <div class="panel-heading" style="background-color: black; color: red;">
+                <h1 class="panel-title text-center">Miami HEAT Trivia Game!</h1>
+          </div>
+               <div class="panel-body text-center">
+                  <div id="firstToGo">
+                    <span><p>You will have 23 seconds to answer 5 questions</p></span>
+                    <br>
+                    <span><p>Press the Start button to begin!</p></span>
+                
+              <br>
+                      <div class="text-center"><button type="button" id="start" class="btn btn-danger btn-lg btn-center">Start</button></div>
+                   </div>
+          
+                      <div class = "comeBack">
+            
+                         <div id="show-number"></div>
+                <br><br>
+                            <div id=" questions">
+                               <h2>What year were the Miami HEAT founded?</h2>
+  <br>
+  <form>
+    <label class="radio-inline">
+      <input type="radio" value = "2" name="que0">1945
+    </label>
+    <label class="radio-inline">
+      <input type="radio" value="1988" name="que0">1988
+    </label>
+    <label class="radio-inline">
+      <input type="radio" value="2" name="que0">1992
+    </label>
+    <label class="radio-inline">
+      <input type="radio" value="3" name="que0">1953
+    </label>
+    <br><br><br>
+    
+    <h2>Who was the HEAT's first round pick of the 2008 draft?</h2>
+    <br>
+     <label class="radio-inline">
+      <input  type="radio" value="2" name="que1">Josh Richardson
+    </label>
+    <label class="radio-inline">
+      <input type="radio" value="2" name="que1">Dwyane Wade
+    </label>
+   <label class="radio-inline">
+      <input type="radio" value="Michael Beasely" name="que1">Michael Beasely
+      </label>
+      <br> <br><br>
+
+     <h2>What number did Lebron James wear on the Miami HEAT?</h2>
+    <br>
+     <label class="radio-inline">
+      <input type="radio" value="2" name="que2">23
+    </label>
+    <label class="radio-inline">
+      <input type="radio" value="6" name="que2">6
+    </label>
+    <label class="radio-inline">
+      <input type="radio" value="2" name="que2">2
+      </label>
+   <label class="radio-inline">
+      <input type="radio" value="2" name="que2">4
+      </label>
+      <br> <br><br>
+
+  <h2>What's the most games the HEAT have won in a single season?</h2>
+    <br>
+     <label class="radio-inline">
+      <input type="radio" value="2" name="que3">65
+    </label>
+    <label class="radio-inline">
+      <input type="radio" value="66" name="que3">66
+    </label>
+    <label class="radio-inline">
+      <input type="radio" value="2" name="que3">120
+      </label>
+   <label class="radio-inline">
+      <input type="radio" value="2" name="que3">84
+      </label>
+      <br> <br><br>
+
+
+ <h2>Who is the HEAT's all time leading scorer?</h2>
+    <br>
+     <label class="radio-inline">
+      <input type="radio" value="2" name="que4">Shaq
+    </label>
+    <label class="radio-inline">
+      <input type="radio" value="2" name="que4">Lebron James
+    </label>
+   <label class="radio-inline">
+      <input type="radio" value="Dwyane Wade" name="que4">Dwyane Wade
+      </label>
+      <br> <br><br>
+ 
+        </form>
+  <button type = button id = "results-main" class=" btn btn-danger bt-lg btn-center">Submit</button>
+                 </div>
+           </div>
+      </div>
+
+                  <div class="results text-center">
+                    <div id="correct"></div>
+                    <br>
+                    <div id="wrong"></div>
+                    <br>
+                    <div id="unanswered"></div>
+                    <br>
+
+                <p>Refresh page to play again!</p>
+                  <br>
+                  </div>
+
+
+    </div>
+  </div>
+</div>  
+
+
+<script src="assets/javascript/app.js"></script>
+
+</body>
+</html>
